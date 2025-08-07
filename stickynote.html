@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Notes (˶˃ ᵕ ˂˶)</title>
+  <style>
+    body {
+      background: #fff6fa;
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 40px 20px 80px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #c279d1;
+      font-size: 2.3em;
+      margin-bottom: 50px;
+    }
+
+    .board {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .sticky-block {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: none;
+      transform: rotate(var(--angle));
+    }
+
+    .note {
+      width: 200px;
+      padding: 20px;
+      background-color: var(--color);
+      border: 1px dashed #aaa;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      font-size: 0.95em;
+      color: #444;
+      text-align: center;
+    }
+
+    .sticky-block img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.2em;
+      padding: 30px 0;
+      color: #ff88b8;
+      font-weight: bold;
+      border-top: 1px dashed #ffc4e1;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🧷 Sticky Notes For You</h2>
+
+  <div class="board">
+    <div class="sticky-block" style="--color: #fff8b0; --angle: -4deg;">
+      <div class="note">Everything is gonna be alright as long as we're together :3</div>
+      <img src="meowmeow.jpg" alt="cat 1">
+    </div>
+
+    <div class="sticky-block" style="--color: #ffd3f4; --angle: 3deg;">
+      <div class="note">I hope you feel as loved as you make me feel</div>
+      <img src="meowflower.jpg" alt="cat 2">
+    </div>
+
+    <div class="sticky-block" style="--color: #d0f4de; --angle: -2deg;">
+      <div class="note">Honey,you are enough. Always have been, always will be <3</div>
+      <img src="meowheart.jpg" alt="cat 3">
+    </div>
+
+    <div class="sticky-block" style="--color: #f9f7a1; --angle: 5deg;">
+      <div class="note">You are the peace I never knew I needed</div>
+      <img src="happymeow.jpg" alt="cat 4">
+    </div>
+
+    <div class="sticky-block" style="--color: #e0bbff; --angle: -5deg;">
+      <div class="note">Whatever happens, remember that i always love you so much and i always be by your side :3</div>
+      <img src="meowkiss.jpg" alt="cat 5">
+    </div>
+  </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+    <a href="birthday.html" style="
+      background-color: #ffcce7;
+      color: #a30055;
+      text-decoration: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      font-family: 'Comic Sans MS', cursive;
+      transition: 0.3s ease;
+    " onmouseover="this.style.backgroundColor='#ffaad4'" onmouseout="this.style.backgroundColor='#ffcce7'">
+      💌 Next Page
+    </a>
+  </div>
+
+
+  <footer>Nobody can stop us loving each other dearly <3</footer>
+
+</body>
+</html>
